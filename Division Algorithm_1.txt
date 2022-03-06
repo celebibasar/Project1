@@ -7,7 +7,7 @@
 	7)	Start
 	8)	ReadWrite(M1,R5)
 	9)	<=(R1, R4, R5)
-	10)	IfJump(R5,21)
+	10)	IfJump(R5,20)
 	11)	SUBTRACT(R1, R2, R1)
 	12)	ADD(R4, R3, R4)
 	13)	>(R1, R2, R5)
