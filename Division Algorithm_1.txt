@@ -1,22 +1,37 @@
-	1)	R1 = 72
-	2)	R2 = 5
+	1)	R1 = Dividend // New Quation
+	2)	R2 = Divisor // New Remainder
 	3)	R3 = 1
 	4)	R4 = 0
 	5)	R5 = 0
-	6)	M1 = 0
-	7)	Start
-	8)	ReadWrite(M1,R5)
-	9)	<=(R1, R4, R5)
-	10)	IfJump(R5,20)
-	11)	SUBTRACT(R1, R2, R1)
-	12)	ADD(R4, R3, R4)
-	13)	>(R1, R2, R5)
-	14)	IfJump(R5,8)
-	15)	=(R1, R2, R5)
-	16)	IfJump(R5,8)
-	17)	ReadWrite(R1,R2)
-	18)	ReadWrite(R4,R1)
-	10)	IfJump(R3,22)
-	20)	ReadWrite(R1,R2)
-	21)	ReadWrite(M1,R1)
-	22)	Stop
+	6)	R6 = 0
+	7)	R7 = 0
+	8)	M1 = 0
+	9)	M2 = 0
+	10)	ReadWrite(R1, M1)
+	11)	ReadWrite(R2, M2)
+	12)	>=(R1, R2, R7)
+	13)	IfJump(R7, 18)
+	14)	NegativeDividend(M1, M2, R5)
+	15)	IfJump(R5, 18)
+	16)	Small(M1, M2, R5)
+	17)	IfJump(R5, 21)
+	18)	SUBTRACT(R1, R2, R1)
+	19)	ADD(R4, R3, R4)
+	20)	IfJump(R7,7)
+	21)	ReadWrite(R1,R2)
+	22)	ReadWrite(R4,R1)
+	23)	
+	24)	
+	25)	
+	26)	
+	27)	Small
+	28)	ReadWrite(M1, R1)
+	29)	ReadWrite(M2, R2)
+	30)	<(R1, R2, R5)
+	31)	
+	32)	NegativeDividend
+	33)	ReadWrite(M1, R1)
+	34)	ReadWrite(M2, R2)
+	35)	ADD(R1, R2, R1)
+	36)	SUBTRACT(R4, R3, R4)
+	37)	>(R1, R6, R5)
