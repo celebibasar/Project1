@@ -4,35 +4,34 @@
 	4)	R4 = 0
 	5)	R5 = 0
 	6)	R6 = 0
-	7)	R7 = 0
-	8)	M1 = 0
-	9)	M2 = 0
-	10)	ReadWrite(R1, M1)
-	11)	ReadWrite(R2, M2)
-	12)	>=(R1, R2, R7)
-	13)	IfJump(R7, 18)
-	14)	NegativeDividend(M1, M2, R5)
-	15)	IfJump(R5, 18)
-	16)	Small(M1, M2, R5)
-	17)	IfJump(R5, 21)
-	18)	SUBTRACT(R1, R2, R1)
-	19)	ADD(R4, R3, R4)
-	20)	IfJump(R7,7)
-	21)	ReadWrite(R1,R2)
-	22)	ReadWrite(R4, R1)
+	7)	M1 = 0
+	8)	M2 = 0
+	9)	ReadWrite(R1, M1)
+	10)	ReadWrite(R2, M2)
+	11)	>=(R1, R2, R6)
+	12)	IfJump(R6, 17)
+	13)	NegativeDividend(M1, M2, R5)
+	14)	IfJump(R5, 17)
+	15)	Small(M1, M2, R5)
+	16)	IfJump(R5, 20)
+	17)	SUBTRACT(R1, R2, R1)
+	18)	ADD(R4, R3, R4)
+	19)	IfJump(R6,9)
+	20)	ReadWrite(R1,R2)
+	21)	ReadWrite(R4, R1)
+	22)	
 	23)	
 	24)	
 	25)	
-	26)	
-	27)	Small
-	28)	ReadWrite(M1, R1)
-	29)	ReadWrite(M2, R2)
-	30)	<(R1, R2, R5)
-	31)	
-	32)	NegativeDividend
-	33)	ReadWrite(M1, R1)
-	34)	ReadWrite(M2, R2)
-	35)	ADD(R1, R2, R1)
-	36)	SUBTRACT(R4, R3, R4)
-	37)	>(R1, R6, R5)
+	26)	Small
+	27)	ReadWrite(M1, R1)
+	28)	ReadWrite(M2, R2)
+	29)	<(R1, R2, R5)
+	30)	
+	31)	NegativeDividend
+	32)	ReadWrite(M1, R1)
+	33)	ReadWrite(M2, R2)
+	34)	ADD(R1, R2, R1)
+	35)	SUBTRACT(R4, R3, R4)
+	36)	>(R1, R5, R5)
 
