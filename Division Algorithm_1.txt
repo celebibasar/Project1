@@ -1,4 +1,4 @@
-	1)	R1 = Dividend // New Quation
+	1)	R1 = Dividend // New Quotient
 	2)	R2 = Divisor // New Remainder
 	3)	R3 = 1
 	4)	R4 = 0
@@ -19,7 +19,7 @@
 	19)	ADD(R4, R3, R4)
 	20)	IfJump(R7,7)
 	21)	ReadWrite(R1,R2)
-	22)	ReadWrite(R4,R1)
+	22)	ReadWrite(R4, R1)
 	23)	
 	24)	
 	25)	
@@ -35,3 +35,4 @@
 	35)	ADD(R1, R2, R1)
 	36)	SUBTRACT(R4, R3, R4)
 	37)	>(R1, R6, R5)
+
