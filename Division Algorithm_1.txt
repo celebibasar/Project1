@@ -3,22 +3,22 @@
 	3)	R3 = 1
 	4)	R4 = 0
 	5)	R5 = 0
-	6)	
+	6)	R6 = 0
 	7)	M1 = 0
 	8)	M2 = 0
 	9)	ReadWrite(R1, M1)
 	10)	ReadWrite(R2, M2)
-	11)	>=(R1, R2, R5)
-	12)	IfJump(R5, 17)
+	11)	>=(R1, R2, R6)
+	12)	IfJump(R6, 17)
 	13)	NegativeDividend(M1, M2, R5)
 	14)	IfJump(R5, 17)
 	15)	Small(M1, M2, R5)
 	16)	IfJump(R5, 20)
 	17)	SUBTRACT(R1, R2, R1)
 	18)	ADD(R4, R3, R4)
-	19)	IfJump(R5,11)
+	19)	IfJump(R6,11)
 	20)	ReadWrite(R1,R2)
-	21)	ReadWrite(R4,R1)
+	21)	ReadWrite(R4, R1)
 	22)	
 	23)	
 	24)	
@@ -34,4 +34,3 @@
 	34)	ADD(R1, R2, R1)
 	35)	SUBTRACT(R4, R3, R4)
 	36)	>(R1, R5, R5)
-
